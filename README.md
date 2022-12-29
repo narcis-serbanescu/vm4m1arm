@@ -20,7 +20,7 @@ brew install qemu libvirt virt-manager
 brew services start libvirt
 ```
 
-1. Using QEMU - qemu-system-aarch64
+1. Using QEMU - qemu-system-aarch64 & qemu-system-x86_64
 
 2. Using libvirt / virsh
 
