@@ -13,7 +13,6 @@ echo ${PASSWD} | sudo -S qemu-system-x86_64 \
   -m 8192 \
   -vga std \
   -usb \
-  -drive file=/opt/homebrew/Cellar/qemu/7.2.0/share/qemu/edk2-x86_64-secure-code.fd,if=pflash,format=raw,readonly=on \
   -device qemu-xhci \
   -device VGA,vgamem_mb=64 \
   -device usb-kbd \
