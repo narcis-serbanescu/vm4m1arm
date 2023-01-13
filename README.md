@@ -25,4 +25,6 @@ brew services start libvirt
 2. Using libvirt / virsh
 
 
+Guest OS Windows x86_64 emulated via QEMU    
+
 
