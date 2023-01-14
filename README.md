@@ -1,6 +1,6 @@
 # QEMU based Virtual Machines with GUI and Network running on MAC computers with Apple Silicon (M1 devices)         
 
-## How to setup and run Linux VMs on Apple M1 host using QEMU, libvirt and HVF with GUI and network        
+## How to setup and run Linux and Windows VMs on Apple M1 host using QEMU, libvirt and HVF with GUI and network        
 
 ### Requirements
 
