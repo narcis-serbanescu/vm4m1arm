@@ -11,14 +11,22 @@ HOST
 - libvirt - 8.9.0  
 - virt-manager - 4.1.0  
 
-Guest OS Fedora Linux
-
+Guest OS Fedora Linux, RHEL8 x86_64, Windows8, 10, 11 x86_64
+Installing QEMU:
 
 ```sh
-brew install qemu libvirt virt-manager
+brew install qemu
+```
+
+Optionally, install libvirt to get more flexibility:
+
+```sh
+brew install libvirt virt-manager
 
 brew services start libvirt
 ```
+
+For native speeds an ISO image for AARCH64 hosts (ARM) is needed. Of course, x86 ISO will also need QEMU to emulate the virtual hardware.
 
 1. Using QEMU - qemu-system-aarch64 & qemu-system-x86_64
 
