@@ -29,9 +29,12 @@ brew services start libvirt
 For native speeds an ISO image for AARCH64 hosts (ARM) is needed. Of course, x86 ISO will also need QEMU to emulate the virtual hardware.
 
 1. Using QEMU - qemu-system-aarch64 & qemu-system-x86_64
+vm_start_fs37xfce.sh - Install & start Fedora37 aarch64 VM with GUI XFCE and network          
+vm_start_rh87x86_64.sh - Install and start RHEL87 x86_64 VM with GUI and network
+
 
 2. Using libvirt / virsh
-
+libvirt_start.sh - Install & start Fedora37 aarch64 VM with GUI XFCE and network
 
 Guest OS Windows x86_64 emulated via QEMU    
 
