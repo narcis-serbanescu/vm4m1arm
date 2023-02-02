@@ -12,7 +12,7 @@ echo ${PASSWD} | sudo -S qemu-system-aarch64 \
     -smp 4 \
     -m 4096 \
     -serial telnet::4444,server,nowait \
-    -drive file=/opt/homebrew/Cellar/qemu/${QEMU_VER}/share/qemu/edk2-aarch64-code.fd,if=pflash,format=raw,readonly=on \
+    -bios /opt/homebrew/share/qemu/edk2-aarch64-code.fd \
     -device virtio-rng-pci,rng=rng0 \
     -device virtio-balloon \
     -device virtio-scsi-pci,id=scsi0 \
@@ -36,6 +36,6 @@ echo ${PASSWD} | sudo -S qemu-system-aarch64 \
 
     # -display vnc=127.0.0.1:0 \
     # -device virtio-gpu-pci \
-    #
+    # -drive file=/opt/homebrew/Cellar/qemu/${QEMU_VER}/share/qemu/edk2-aarch64-code.fd,if=pflash,format=raw,readonly=on \
     # -cdrom RHEL-9.0.0-20220420.0-aarch64-dvd1.iso
     
